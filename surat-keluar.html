@@ -75,7 +75,7 @@ function escapeHtml(str) {
 function loadNomorSurat() {
   const data = JSON.parse(localStorage.getItem("dataSurat") || "[]");
   if (data.length === 0) {
-    nomorSuratInput.value = 3601;
+    nomorSuratInput.value = 3687;
   } else {
     let last = parseInt(data[data.length - 1].nomorSurat);
     nomorSuratInput.value = isNaN(last) ? 1 : last + 1;
@@ -110,3 +110,4 @@ window.addEventListener("load", loadNomorSurat);
 </body>
 
 </html>
+
